@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
 
-         <title>Pictogram</title>
-<!--
-
-DIGITAL TREND
-
-https://templatemo.com/tm-538-digital-trend
-
--->
+     <title>Pictogram</title>
+	<!-- Pictogram Chart + Template-->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -29,16 +23,15 @@ https://templatemo.com/tm-538-digital-trend
 </head>
 <body>
 
-     <!-- HERO -->
+	<!-- Introduction -->
      <section class="hero hero-bg d-flex justify-content-center align-items-center">
                <div class="container">
                     <div class="row">
 
                         <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                               <div class="hero-text">
-
-                                   <h1 class="text-white" data-aos="fade-up">Understanding 
-								   <br />Pictogram</h1>
+                                  <h1 class="text-white" data-aos="fade-up">Understanding 
+								  <br />Pictogram</h1>
                               </div>
                         </div>
 
@@ -54,7 +47,7 @@ https://templatemo.com/tm-538-digital-trend
      </section>
 
 
-     <!-- ABOUT -->
+     <!-- Information of Pictogram-->
      <section class="about section-padding pb-0" id="about">
           <div class="container">
                <div class="row">
@@ -75,35 +68,34 @@ https://templatemo.com/tm-538-digital-trend
 							<p>The following pictogram indicates participants from NYS and Singa Polytechnics answering whether if polytechnic students should be wearing uniforms.</p>
                          </div>
 
-                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
-			 <div id="sliderDiv">
-			 </div>
-				<!-- Start of Pictogram -->
-                <script src="https://d3js.org/d3.v3.min.js"></script>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-				<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
-				<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-				<script src="https://cdn.jsdelivr.net/jquery.ui.touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-				<style type="text/css">
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200"></div>
+	
+                    </div>
+               </div>
+               <div class="row">
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">		
+					
+						<div id="sliderDiv"></div>
+						<div id="svgDiv"></div>
+					
+					<!-- Start of Pictogram -->
+					<script src="https://d3js.org/d3.v3.min.js"></script>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+					<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+					<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+					<script src="https://cdn.jsdelivr.net/jquery.ui.touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+					<style type="text/css">
                
 						#sliderDiv  {
 							margin:10px;
 							margin-top:30px;
 							position: relative;
-							left: 760px;
-							height:15px;
-							width: 350px;
-							bottom: 5px;
 						}
 						
 						svg {
 							overflow:none;
 							padding:6px;
 							position: relative;
-							left: 750px;
-							width:400px;
-							height:400px;
-							bottom: 15px;
 						}
 						
 						text    {
@@ -134,7 +126,7 @@ https://templatemo.com/tm-538-digital-trend
 						//d3.select("body").append("div").attr("id","sliderDiv");
 						
 						//create svg element
-						var svgDoc=d3.select("body").append("svg").attr("viewBox","0 0 100 100");
+						var svgDoc=d3.select("#svgDiv").append("svg").attr("viewBox","0 0 100 100");
 						
 						 //define an icon store it in svg <defs> elements as a reusable component - this geometry can be generated from Inkscape, Illustrator or similar
 						svgDoc.append("defs")
@@ -211,12 +203,9 @@ https://templatemo.com/tm-538-digital-trend
 						
 					</script>
 					<img src ="legend.png" alt="legend" style="width: 25%; position: relative;">
-					
 					<!-- End of Pictogram-->
-                        </div>
-                    </div>
-
-               </div>
+					</div>
+				</div>
           </div>
      </section>
 
@@ -242,7 +231,7 @@ https://templatemo.com/tm-538-digital-trend
             <p>
               <a href="#">
                 <i class="fa fa-lightbulb-o mr-2 footer-icon"></i> <strong>Answer</strong><br />
-                3 × 100 = 300 <br />
+				3 × 100 = 300 <br />
 				35% of 300 = 105 <br />
 				300 - 105 = 195<br />
 				195 ÷ 3 = 65
@@ -260,7 +249,7 @@ https://templatemo.com/tm-538-digital-trend
 			  and x = to slider number, find the remaining number of male participants from Singa Polytechnic.
             </p>
           </div>
-
+	 </footer>
 
      <!-- SCRIPTS -->
      <script src="js/jquery.min.js"></script>
